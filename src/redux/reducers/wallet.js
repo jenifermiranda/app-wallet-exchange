@@ -10,7 +10,7 @@ const wallet = (state = initialState, action) => {
   case 'ADD_EXPENSE':
     return {
       ...state,
-      expense: [...state.expenses, action.expense],
+      currencies: action.payloa,
     };
   default:
     return state;

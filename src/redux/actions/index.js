@@ -10,7 +10,7 @@ export const addEmail = (email) => ({
 
 export const addExpense = (expense) => ({
   type: ADD_EXPENSE,
-  expense,
+  payload: expense,
 });
 
 export const deleteExpense = (id) => ({
