@@ -16,12 +16,10 @@ class Header extends Component {
           {' '}
           {email}
         </p>
-        <p data-testid="total-field">
-          Despesa Total:
-          {' '}
-          {calculate}
-        </p>
-        <p data-testid="header-currency-field">BRL</p>
+        <span>Despesa Total: </span>
+        <span data-testid="total-field">{calculate}</span>
+        <span> </span>
+        <span data-testid="header-currency-field">BRL</span>
       </div>
     );
   }
