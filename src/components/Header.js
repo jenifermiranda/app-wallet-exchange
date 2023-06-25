@@ -11,8 +11,16 @@ class Header extends Component {
 
     return (
       <div>
-        <p data-testid="email-field">{email}</p>
-        <p data-testid="total-field">{calculate}</p>
+        <p data-testid="email-field">
+          Email:
+          {' '}
+          {email}
+        </p>
+        <p data-testid="total-field">
+          Despesa Total:
+          {' '}
+          {calculate}
+        </p>
         <p data-testid="header-currency-field">BRL</p>
       </div>
     );
