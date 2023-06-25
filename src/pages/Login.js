@@ -62,7 +62,13 @@ class Login extends React.Component {
             placeholder="******"
             onChange={ this.handleChange }
           />
-          <button disabled={ disabled } onClick={ this.handleClick }>Entrar</button>
+          <button
+            type="button"
+            disabled={ disabled }
+            onClick={ this.handleClick }
+          >
+            Entrar
+          </button>
         </form>
       </div>
     );
