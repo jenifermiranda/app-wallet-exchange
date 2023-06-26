@@ -30,7 +30,7 @@ export const addExpense = (expense) => ({
 
 export const deleteExpense = (id) => ({
   type: DELETE_EXPENSE,
-  id,
+  payload: id,
 });
 
 export const editExpense = (expense) => ({
