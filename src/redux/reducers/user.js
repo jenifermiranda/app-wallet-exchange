@@ -8,7 +8,6 @@ const user = (state = initialState, { type, payload }) => {
   switch (type) {
   case ADD_EMAIL:
     return {
-      ...state,
       email: payload.email,
     };
   default:
