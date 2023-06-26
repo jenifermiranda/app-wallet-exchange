@@ -74,6 +74,7 @@ const mapStateToProps = (state) => ({
 
 Table.propTypes = {
   expensesState: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  expensesClick: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 export default connect(mapStateToProps)(Table);
