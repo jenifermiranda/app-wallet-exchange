@@ -1,0 +1,28 @@
+.table-container {
+    background-color: rgba(0, 59, 229, 1);
+    padding: 20px;
+    color: #fff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table td:last-child {
+    text-align: center;
+  }
+  
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  

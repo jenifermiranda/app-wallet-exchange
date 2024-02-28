@@ -1,0 +1,63 @@
+/* Estilos para a página de login */
+.login-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+  
+  .login-title {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .wallet-text {
+    color: rgba(0, 59, 229, 1);
+    font-family: serif;
+    font-size: 30px;
+    font-weight: normal;
+  }
+  
+  .exchange-text {
+    color: rgba(47, 193, 140, 1);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-container {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px; /* Alterado para adicionar espaço entre os inputs */
+    border: 1px solid rgba(0, 59, 229, 1);
+    border-radius: 5px;
+  }
+  
+  .button-container button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 59, 229, 1);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Estilos específicos para desativar o botão */
+  .button-container button:disabled {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: not-allowed;
+  }
+  

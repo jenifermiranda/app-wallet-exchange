@@ -3,11 +3,11 @@ import { Switch } from 'react-router-dom';
 import { Route } from 'react-router';
 import Login from './pages/Login';
 import Wallet from './pages/Wallet';
+import './css/App.css';
 
 function App() {
   return (
     <main>
-      <div>Hello, TrybeWallet!</div>
       <Switch>
         <Route path="/" component={ Login } exact />
         <Route path="/carteira" component={ Wallet } />
