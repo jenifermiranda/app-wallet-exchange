@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import '../css/Header.css';
 
 class Header extends Component {
   render() {
@@ -10,16 +11,44 @@ class Header extends Component {
     }, 0).toFixed(2);
 
     return (
-      <div>
-        <p data-testid="email-field">
-          Email:
-          {' '}
-          {email}
-        </p>
-        <span>Despesa Total: </span>
-        <span data-testid="total-field">{calculate}</span>
-        <span> </span>
-        <span data-testid="header-currency-field">BRL</span>
+      <div className="header">
+        <div className="header-title">
+          <span
+            style={ {
+              color: 'rgba(0, 59, 229, 1)',
+              fontFamily: 'serif',
+              fontSize: '30px',
+              fontWeight: 'normal',
+            } }
+          >
+            Wallet
+          </span>
+          <span> </span>
+          <span
+            style={ {
+              color: 'rgba(47, 193, 140, 1)',
+              fontFamily: 'sans-serif',
+              fontSize: '30px',
+              fontWeight: 'bold',
+            } }
+          >
+            Exchange
+          </span>
+        </div>
+        <div className="header-content">
+          <span className="total-expenses">
+            Despesa Total:
+            {' '}
+            {calculate}
+            {' '}
+            BRL
+          </span>
+          <span className="email" data-testid="email-field">
+            Email:
+            {' '}
+            {email}
+          </span>
+        </div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addEmail } from '../redux/actions';
+import '../css/Login.css';
 
 class Login extends React.Component {
   state = {
@@ -43,8 +44,12 @@ class Login extends React.Component {
   render() {
     const { email, password, disabled } = this.state;
     return (
-      <div>
-        <div>Login </div>
+      <div className="login-container">
+        <div className="login-title">
+          <span className="wallet-text">Wallet</span>
+          <span> </span>
+          <span className="exchange-text">Exchange</span>
+        </div>
         <form>
           <input
             type="email"
@@ -53,6 +58,7 @@ class Login extends React.Component {
             data-testid="email-input"
             placeholder="Email"
             onChange={ this.handleChange }
+            className="input-container"
           />
           <input
             type="password"
@@ -61,14 +67,17 @@ class Login extends React.Component {
             data-testid="password-input"
             placeholder="******"
             onChange={ this.handleChange }
+            className="input-container"
           />
-          <button
-            type="button"
-            disabled={ disabled }
-            onClick={ this.handleClick }
-          >
-            Entrar
-          </button>
+          <div className="button-container">
+            <button
+              type="button"
+              disabled={ disabled }
+              onClick={ this.handleClick }
+            >
+              Entrar
+            </button>
+          </div>
         </form>
       </div>
     );

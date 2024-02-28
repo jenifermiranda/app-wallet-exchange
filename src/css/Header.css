@@ -1,0 +1,24 @@
+.header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .total-expenses,
+  .email {
+    color: rgba(0, 59, 229, 1);
+    margin: 0 auto;
+  }
